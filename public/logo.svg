@@ -1,5 +1,7 @@
 <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
 
+  <rect width="400" height="400" fill="#F9F7F4"/>
+
   <text
     x="200" y="200"
     font-family="Georgia, 'Times New Roman', serif"
@@ -12,7 +14,6 @@
     letter-spacing="-6"
   >JR</text>
 
-  <!-- Band cuts through JR, matches off-white site bg -->
   <rect x="0" y="158" width="400" height="36" fill="#F9F7F4"/>
 
   <text
