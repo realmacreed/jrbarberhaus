@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     url: "https://jrbarberhaus.com",
     siteName: "JR Barber Haus",
     type: "website",
+    images: [{ url: "https://jrbarberhaus.com/opengraph-image", width: 1200, height: 630 }],
   },
 };
 
