@@ -609,7 +609,7 @@ body { animation: pageIn 0.5s ease-out both; }
   .nav-book { padding: 1rem 1.75rem; border: none; font-size: 0.8rem; width: 100%; min-height: 44px; display: flex; align-items: center; }
   .nav-hamburger { display: flex; width: 44px; height: 44px; align-items: center; justify-content: center; }
 
-  .hero-content { position: relative; width: 100%; height: auto; padding: 3rem 1.75rem 2rem; justify-content: flex-start; align-items: flex-start; }
+  .hero-content { position: relative; width: 100%; height: auto; padding: 3rem 1.75rem 2rem; justify-content: flex-start; align-items: center; text-align: center; }
   .hero-brand-logo { width: min(300px, 88vw); height: auto; }
   .hero-marble { display: none; }
   .hero-rule { display: none; }
@@ -637,7 +637,7 @@ body { animation: pageIn 0.5s ease-out both; }
     height: auto;
     animation: pageIn 0.8s var(--ease) 0.2s both;
   }
-  .hero-content { padding: 2rem 1.25rem 2rem; gap: 1rem; }
+  .hero-content { padding: 2rem 1.25rem 2rem; gap: 1rem; align-items: center; text-align: center; }
   .hero-location { font-size: 0.65rem; }
   .hero-cta-primary { width: 100%; text-align: center; padding: 1.2rem 2rem; font-size: 0.72rem; }
 
