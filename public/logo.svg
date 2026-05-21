@@ -1,0 +1,34 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- White background -->
+  <rect width="400" height="400" fill="#FFFFFF"/>
+
+  <!-- "JR" large italic serif -->
+  <text
+    x="200" y="200"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="260"
+    font-style="normal"
+    font-weight="400"
+    fill="#0D0C0A"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    letter-spacing="-6"
+  >JR</text>
+
+  <!-- White band cuts through the middle of JR -->
+  <rect x="0" y="158" width="400" height="36" fill="#FFFFFF"/>
+
+  <!-- "BARBER HAUS" runs through that white band -->
+  <text
+    x="200" y="181"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="17"
+    font-weight="400"
+    fill="#0D0C0A"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    letter-spacing="10"
+  >BARBER HAUS</text>
+
+</svg>
