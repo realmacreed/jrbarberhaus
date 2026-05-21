@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   description: "Premium barbershop in Shelby Township, MI. Precision cuts, fades, beard trims, and hot towel shaves. Walk-ins welcome, appointments recommended.",
   openGraph: {
     title: "JR Barber Haus",
-    description: "Premium barbershop in Sterling Heights, MI.",
+    description: "Premium barbershop in Shelby Township, MI.",
     url: "https://jrbarberhaus.com",
     siteName: "JR Barber Haus",
     type: "website",
