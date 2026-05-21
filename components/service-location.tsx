@@ -1,8 +1,9 @@
 import { Reveal } from "./reveal";
 
-const services = [
-  { name: "Haircut", price: "$40" },
-  { name: "Haircut + Beard", price: "$50" },
+const services: { name: string; desc: string; price: string; muted?: boolean }[] = [
+  { name: "Haircut", desc: "Precision cut, styled to finish", price: "$40" },
+  { name: "Haircut + Beard", desc: "Full cut with beard shaping & lineup", price: "$50" },
+  { name: "Hair Products & Supplies", desc: "Premium grooming essentials", price: "Coming Soon", muted: true },
 ];
 
 const hours = [
@@ -24,10 +25,14 @@ export default function ServiceLocation() {
             </Reveal>
             <Reveal delay={120}>
               <ul className="services-list">
-                {services.map((s) => (
-                  <li key={s.name} className="service-row">
-                    <span className="service-name">{s.name}</span>
-                    <span className="service-price">{s.price}</span>
+                {services.map((s, i) => (
+                  <li key={s.name} className={`service-row${s.muted ? " service-row--muted" : ""}`}>
+                    <span className="service-index">0{i + 1}</span>
+                    <span className="service-info">
+                      <span className="service-name">{s.name}</span>
+                      <span className="service-desc">{s.desc}</span>
+                    </span>
+                    <span className={s.muted ? "service-coming-soon" : "service-price"}>{s.price}</span>
                   </li>
                 ))}
               </ul>
