@@ -12,6 +12,13 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", fn);
   }, []);
 
+  useEffect(() => {
+    if (!open) return;
+    const fn = () => setOpen(false);
+    window.addEventListener("scroll", fn, { passive: true, once: true });
+    return () => window.removeEventListener("scroll", fn);
+  }, [open]);
+
   const close = () => setOpen(false);
 
   return (
@@ -26,7 +33,7 @@ export default function Nav() {
         <a href="#products" className="nav-link" onClick={close}>Products</a>
         <a href="https://book.squareup.com/appointments/p1zigyf4do2lxd/location/L904FJK880TN7/services" target="_blank" rel="noopener noreferrer" className="nav-book" onClick={close}>Book Now</a>
       </div>
-      <button className="nav-hamburger" onClick={() => setOpen(o => !o)} aria-label="Toggle menu">
+      <button className={`nav-hamburger${open ? " nav-hamburger--open" : ""}`} onClick={() => setOpen(o => !o)} aria-label="Toggle menu">
         <span /><span /><span />
       </button>
     </nav>

@@ -1,9 +1,5 @@
 <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
 
-  <!-- White background -->
-  <rect width="400" height="400" fill="#FFFFFF"/>
-
-  <!-- "JR" large italic serif -->
   <text
     x="200" y="200"
     font-family="Georgia, 'Times New Roman', serif"
@@ -16,10 +12,9 @@
     letter-spacing="-6"
   >JR</text>
 
-  <!-- White band cuts through the middle of JR -->
-  <rect x="0" y="158" width="400" height="36" fill="#FFFFFF"/>
+  <!-- Band cuts through JR, matches off-white site bg -->
+  <rect x="0" y="158" width="400" height="36" fill="#F9F7F4"/>
 
-  <!-- "BARBER HAUS" runs through that white band -->
   <text
     x="200" y="181"
     font-family="Georgia, 'Times New Roman', serif"

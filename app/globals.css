@@ -608,12 +608,18 @@ body { animation: pageIn 0.5s ease-out both; }
   .nav-link::after { display: none; }
   .nav-book { padding: 1rem 1.75rem; border: none; font-size: 0.8rem; width: 100%; min-height: 44px; display: flex; align-items: center; }
   .nav-hamburger { display: flex; width: 44px; height: 44px; align-items: center; justify-content: center; }
+  .nav-hamburger--open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+  .nav-hamburger--open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+  .nav-hamburger--open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 
-  .hero-content { position: relative; width: 100%; height: auto; padding: 3rem 1.75rem 2rem; justify-content: flex-start; align-items: center; text-align: center; }
+  .hero { flex-direction: column; align-items: stretch; }
+  .hero-content { position: relative; width: 100%; height: auto; flex: 1; padding: 3.5rem 1.75rem 3rem; justify-content: center; align-items: center; text-align: center; }
   .hero-brand-logo { width: min(300px, 88vw); height: auto; }
   .hero-marble { display: none; }
   .hero-rule { display: none; }
-  .hero-shop { display: none; }
+  .hero-shop { position: relative; right: auto; top: auto; width: 100%; height: auto; padding: 3rem 1.75rem 3.5rem; background: #E8E2D8; align-items: center; justify-content: center; text-align: center; }
+  .hero-shop .section-label { justify-content: center; }
+  .hero-shop-sub { max-width: 100%; }
 
   .service-location-inner { padding: 5rem 1.75rem; }
   .service-location-grid { grid-template-columns: 1fr; gap: 3.5rem; }
@@ -637,9 +643,11 @@ body { animation: pageIn 0.5s ease-out both; }
     height: auto;
     animation: pageIn 0.8s var(--ease) 0.2s both;
   }
-  .hero-content { padding: 2rem 1.25rem 2rem; gap: 1rem; align-items: center; text-align: center; }
+  .hero-content { padding: 2.5rem 1.25rem 2.5rem; gap: 1rem; align-items: center; text-align: center; }
   .hero-location { font-size: 0.65rem; }
   .hero-cta-primary { width: 100%; text-align: center; padding: 1.2rem 2rem; font-size: 0.72rem; }
+  .hero-shop { padding: 2.5rem 1.25rem 3rem; }
+  .hero-shop-title { font-size: clamp(1.8rem, 6vw, 2.2rem); }
 
   /* Services */
   .service-location-inner { padding: 4rem 1.25rem; }
